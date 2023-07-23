@@ -21,14 +21,16 @@
           </div>
         </header>
         <div class="section-content">
-          <div class="content-box">
+          <div class="content-box" >
             <div class="name-slogan">
               <h2 class="wow inShow no-print" data-wow-delay="0.1s">
-                <span class="text-light">{{userInfo.lastName}}</span>&nbsp;{{userInfo.firstName}}
+                <span class="text-light">{{userInfo.lastName}}
+                </span>&nbsp;{{userInfo.firstName}}
               </h2>
+              <br>
               <div class="description wow inShow" data-wow-delay="0.15s">{{userInfo.slogan}}</div>
             </div>
-            <div class="contact-info">
+            <div class="contact-info" >
               <div class="row">
                 <div class="col-md-6 col-lg-3">
                   <div class="item wow inShow" data-wow-delay="0.3s">
@@ -48,14 +50,20 @@
                     <div class="info">{{userInfo.education}}</div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- <div class="col-md-6 col-lg-3">
                   <a class="item wow inShow" data-wow-delay="0.55s" :href="userInfo.website" target="_blank">
                     <h4>经验</h4>
                     <div class="info">{{userInfo.exp[0]+(calcDate(userInfo.workSince)-1)+userInfo.exp[1]+calcDate(userInfo.workSince)+userInfo.exp[2]}}</div>
                   </a>
+                </div> -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="item wow inShow" data-wow-delay="0.6s">
+                    <h4>Phone</h4>
+                    <address class="info">{{userInfo.phone}}</address>
+                  </div>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-md-6 col-lg-3">
                   <div class="item wow inShow" data-wow-delay="0.6s">
                     <h4>Phone</h4>
@@ -80,6 +88,43 @@
                     <div class="info">{{userInfo.github}}</div>
                   </a>
                 </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-bg section-header-bg"></div>
+        <div class="section-bg section-content-bg"></div>
+        <header class="header">
+          <div class="content-box">
+            <h2 class="title">教育背景&nbsp;/&nbsp;
+              <small><i>Educational background</i></small>
+            </h2>
+          </div>
+        </header>
+        <div class="section-content">
+          <div class="experience">
+            <div class="item" v-for="item in userInfo.educational" :key="item.title">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="time">{{item.time}}</div>
+                  <div class="title">{{item.title}}</div>
+                  <div class="description">{{item.intro}}</div>
+                </div>
+                <div class="col-md-7">
+                  <div class="technology" v-for="tech in item.technology" :key="tech.school">
+                    <div><h3 class="text-light">{{tech.school}}</h3></div>
+                    </div>
+                  <div class="technology" v-for="tech in item.technology" :key="tech.title">
+                    <b>{{tech.title}}</b>
+                    <ul class="inline">
+                      <li v-for="techItem in tech.content" :key="techItem">{{techItem}}</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -92,22 +137,21 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">介绍&nbsp;/&nbsp;
-              <small><i>Intro</i></small>
+            <h2 class="title">职业技能&nbsp;/&nbsp;
+              <small><i>Vocational skills</i></small>
             </h2>
-            <div class="description">介绍一些个人基本情况</div>
           </div>
         </header>
         <div class="section-content">
           <div class="intro">
             <p v-for="(intro,idx) in userInfo.intro.content" :key="idx" v-html="intro"></p>
           </div>
-          <div class="technology">
+          <!-- <div class="technology">
             <ul class="inline">
               <li><b>{{userInfo.intro.technology.title}}</b></li>
               <li v-for="item in userInfo.intro.technology.content" :key="item">{{item}}</li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -153,7 +197,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <!-- <section class="section">
       <div class="container">
         <div class="section-bg section-header-bg"></div>
         <div class="section-bg section-content-bg"></div>
@@ -180,7 +224,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="section">
       <div class="container">
         <div class="section-bg section-header-bg"></div>
@@ -190,7 +234,6 @@
             <h2 class="title">项目经验&nbsp;/&nbsp;
               <small><i>Experience</i></small>
             </h2>
-            <div class="description">近期主要做过的一些项目</div>
           </div>
         </header>
         <div class="section-content">
@@ -294,12 +337,12 @@
               </div>
             </div>
           </div>
-          <div class="name-slogan">
+          <!-- <div class="name-slogan">
             <h2 class="wow inShow">
               <span class="text-light">{{userInfo.lastName}}</span>&nbsp;{{userInfo.firstName}}
             </h2>
             <div class="description wow inShow" data-wow-delay="0.05s">{{userInfo.slogan}}（{{userInfo.tips}}）</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
