@@ -383,5 +383,16 @@
       "link":"http://codepen.io",
       "description":"探索和分享好的代码"
     }
-  ]
+  ],
+  "competition":{
+    "content":[
+      "全国大学生智能车竞赛是以智能汽车为研究对象的创意性科技竞赛，参赛队伍要制作一个能够自主识别路径的智能车，在 专门设计的跑道上自动识别道路行驶。其设计内容涵盖了控制、模式识别、传感技术、汽车电子、电气、计算机、机械、能源等多个学科的知识，对学生的知识融合和实践动手能力的培养，具有良好的推动作用。 "
+    ],
+    "technology":{
+      "title":"技术栈和工具：",
+      "content":[
+        "vue","express","mongodb","webpack","node.js","golang","scss","bootstrap","gulp","angular","photoshop","axure"
+      ]
+    }
+  }
 }
