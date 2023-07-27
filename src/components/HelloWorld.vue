@@ -205,7 +205,6 @@
             <h2 class="title">项目经历&nbsp;/&nbsp;
               <small><i>Experience</i></small>
             </h2>
-            <div class="description">不同时期简短的从业经历介绍</div>
           </div>
         </header>
         <div class="section-content">
@@ -280,6 +279,42 @@
         <div class="section-content">
           <div class="intro">
             <p v-for="(intro,idx) in userInfo.competition.content" :key="idx" v-html="intro"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-bg section-header-bg"></div>
+        <div class="section-bg section-content-bg"></div>
+        <header class="header">
+          <div class="content-box">
+            <h2 class="title">科研成果&nbsp;/&nbsp;
+              <small><i>Scientific research achievement</i></small>
+            </h2>
+          </div>
+        </header>
+        <div class="section-content">
+          <div class="intro">
+            <p v-for="(intro,idx) in userInfo.research.content" :key="idx" v-html="intro"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-bg section-header-bg"></div>
+        <div class="section-bg section-content-bg"></div>
+        <header class="header">
+          <div class="content-box">
+            <h2 class="title">校内经历&nbsp;/&nbsp;
+              <small><i>Campus experience</i></small>
+            </h2>
+          </div>
+        </header>
+        <div class="section-content">
+          <div class="intro">
+            <p v-for="(intro,idx) in userInfo.campus.content" :key="idx" v-html="intro"></p>
           </div>
         </div>
       </div>
