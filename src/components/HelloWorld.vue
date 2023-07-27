@@ -56,15 +56,10 @@
                     <div class="info">{{userInfo.exp[0]+(calcDate(userInfo.workSince)-1)+userInfo.exp[1]+calcDate(userInfo.workSince)+userInfo.exp[2]}}</div>
                   </a>
                 </div> -->
-                <div class="col-md-6 col-lg-3">
-                  <div class="item wow inShow" data-wow-delay="0.6s">
-                    <h4>Phone</h4>
-                    <address class="info">{{userInfo.phone}}</address>
-                  </div>
-                </div>
+               
               </div>
-              <!-- <div class="row">
-                <div class="col-md-6 col-lg-3">
+              <div class="row">
+                <!-- <div class="col-md-6 col-lg-3">
                   <div class="item wow inShow" data-wow-delay="0.6s">
                     <h4>Phone</h4>
                     <address class="info">{{userInfo.phone}}</address>
@@ -75,20 +70,26 @@
                     <h4>QQ</h4>
                     <div class="info">{{userInfo.qq.number}}</div>
                   </div>
-                </div>
+                </div> -->
                 <div class="col-md-6 col-lg-3">
-                  <a class="item wow inShow" data-wow-delay="0.7s" :href="userInfo.website" target="_blank">
-                    <h4>Website</h4>
-                    <div class="info">{{userInfo.website}}</div>
+                  <a class="item wow inShow" data-wow-delay="0.7s" :href="userInfo.local" target="_blank">
+                    <h4>籍贯</h4>
+                    <div class="info">{{userInfo.local}}</div>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                  <a class="item wow inShow" data-wow-delay="0.75s" :href="userInfo.github" target="_blank">
-                    <h4>Github</h4>
-                    <div class="info">{{userInfo.github}}</div>
+                  <a class="item wow inShow" data-wow-delay="0.75s" :href="userInfo.time" target="_blank">
+                    <h4>毕业时间</h4>
+                    <div class="info">{{userInfo.time}}</div>
                   </a>
+                </div> 
+                <div class="col-md-6 col-lg-3">
+                  <div class="item wow inShow" data-wow-delay="0.6s">
+                    <h4>Phone</h4>
+                    <address class="info">{{userInfo.phone}}</address>
+                  </div>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
